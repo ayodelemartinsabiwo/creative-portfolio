@@ -1,0 +1,15 @@
+/* Preserve the complete artwork, including portrait originals. */
+.visual,.project.feature .visual{height:auto;display:flex;flex-direction:column;align-items:stretch;overflow:visible;padding:16px;gap:14px}
+.visual img,.feature .visual img{display:block;width:100%;height:390px;object-fit:contain;order:2;transform:none!important}
+.project.feature .visual img{height:440px}
+.project-number{position:static;align-self:flex-start;order:1;background:transparent;padding:0;color:var(--muted)}
+.play{position:static;align-self:flex-start;order:3;margin:0}
+.print-case{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.35fr);gap:6%;padding:58px 0;border-bottom:1px solid var(--line)}
+.case-intro h3{font-size:clamp(30px,3.4vw,45px);line-height:1.12;font-weight:500;letter-spacing:-1.5px;margin:20px 0}
+.case-intro p{color:var(--muted);font-size:15px}.case-intro strong{color:var(--text);font-weight:500}
+.case-gallery{display:grid;gap:24px;align-content:start}.case-gallery figure{margin:0}.case-gallery a{display:block;background:#1c1c1c;border:1px solid var(--line)}
+.case-gallery img{display:block;width:100%;height:auto;object-fit:contain}
+.case-gallery figcaption{font-size:12px;color:var(--muted);padding-top:9px;letter-spacing:.4px}
+.sample-note{font-size:12px!important}.editorial-gallery{grid-template-columns:1fr 1fr}
+.print-work .text-link{font-size:14px}.print-work .work-note .text-link{margin-left:12px}
+@media(max-width:700px){nav{gap:13px;font-size:12px}nav a:nth-child(2){display:block}nav .contact-link{display:none}.print-case{grid-template-columns:1fr;gap:26px;padding:38px 0}.visual img,.project.feature .visual img{height:360px}.editorial-gallery{grid-template-columns:1fr}.print-work .work-note .text-link{margin-left:0}}
