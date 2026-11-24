@@ -4,3 +4,17 @@
 .hero-art,.art-mat,.hero-art figcaption,.art-mat figcaption{background:#d5daca}
 .hero-art img,.art-mat img{mix-blend-mode:multiply}
 .statement{min-height:75vh;grid-template-columns:1.25fr .75fr}.statement .pack-hero-copy{max-width:850px}.statement h1{font-size:clamp(49px,6.4vw,100px)}.hero-abstract{position:relative;min-height:360px;border-left:1px solid #3e4736;padding:24px 0 24px 35px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}.hero-abstract>span{color:#b9c89c;font-size:11px;letter-spacing:.2em;z-index:1}.hero-lines{position:absolute;inset:15% -20% 15% 18%;border:1px solid #84936c;border-radius:50%;transform:rotate(-25deg)}.hero-lines:before,.hero-lines:after{content:"";position:absolute;inset:12%;border:1px solid #566449;border-radius:50%}.hero-lines:after{inset:25%}.terra-overview,.chin-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:clamp(28px,5vw,75px);align-items:center}.terra-contribution{max-width:450px}.terra-contribution h3{font-size:clamp(26px,3vw,43px);line-height:1.12;letter-spacing:-.035em;margin:20px 0 30px}.terra-contribution p:not(.pack-kicker){color:#b9b9b0;line-height:1.7}.terra-contribution strong{color:#f3f2e9}.terra-contribution .small-note{font-size:12px}.case-details{border-top:1px solid #535d49;border-bottom:1px solid #535d49;margin-top:42px}.case-details summary{cursor:pointer;list-style:none;padding:22px 0;color:#d6e8a4;display:flex;justify-content:space-between;gap:20px}.case-details summary::-webkit-details-marker{display:none}.terra-detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:10px 0 24px}.terra-detail-grid img{height:300px;padding:15px}.chin-grid .art-mat img{height:auto}.statement .hero-meta{margin-bottom:0}@media(max-width:800px){.statement{grid-template-columns:1fr;min-height:auto}.hero-abstract{min-height:170px;max-width:100%}.terra-overview,.chin-grid{grid-template-columns:1fr}.terra-detail-grid{grid-template-columns:repeat(3,1fr)}.terra-detail-grid img{height:190px}}@media(max-width:480px){.terra-detail-grid{grid-template-columns:1fr}.terra-detail-grid img{height:auto;max-height:350px}}
+/* Product stages use the original artwork; vector clips hide its plain backdrop. */
+.package-masks{position:absolute;overflow:hidden;pointer-events:none}
+.pack-stage,.pack-stage figcaption{background:#131a17;color:#bbc9a8}
+.pack-stage{border:1px solid #303d32;background:radial-gradient(ellipse at 50% 72%,#354334 0,#1d2a20 42%,#111813 100%);overflow:hidden}
+.pack-stage a{padding:clamp(16px,3vw,38px);min-width:0}
+.pack-stage img{mix-blend-mode:normal;display:block;max-width:100%;height:auto;padding:0;filter:drop-shadow(0 18px 18px rgba(0,0,0,.22))}
+.stage-range img{clip-path:url(#cut-terra-range)}
+.stage-crayfish img{clip-path:url(#cut-crayfish)}
+.stage-chicken img{clip-path:url(#cut-premium-chicken)}
+.stage-beef img{clip-path:url(#cut-premium-beef)}
+.stage-butterfield img{clip-path:url(#cut-butterfield)}
+.terra-detail-grid .pack-stage img{width:auto;height:auto;max-height:300px;max-width:100%;padding:0}
+.pack-stage figcaption{border-top:1px solid #303d32;background:rgba(15,22,17,.84);font-size:10px}
+.pack-stage a:hover img{filter:drop-shadow(0 22px 22px rgba(0,0,0,.4))}
