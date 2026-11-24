@@ -27,3 +27,7 @@
 .pack-stage{border:0;background:transparent;overflow:visible}
 .pack-stage figcaption{border:0;background:transparent;padding:8px 0;color:#a9b59d}
 .pack-stage a{padding:clamp(12px,2vw,28px)}
+/* Keep decorative rings fully inside each product area at every screen size. */
+.pack-stage a::before{inset:8% 12%;width:auto;height:auto;max-height:none;aspect-ratio:auto;border-radius:50%;box-shadow:0 0 0 14px rgba(160,190,115,.035),0 0 0 28px rgba(160,190,115,.025)}
+.stage-butterfield a::before{box-shadow:0 0 0 14px rgba(76,175,166,.035),0 0 0 28px rgba(76,175,166,.025)}
+.pack-stage a{overflow:visible}
