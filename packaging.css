@@ -23,3 +23,7 @@
 .pack-stage a::before{content:"";position:absolute;z-index:-2;width:64%;aspect-ratio:1;border:1px solid rgba(202,224,162,.25);border-radius:50%;background:radial-gradient(circle,rgba(167,192,112,.16),rgba(94,125,74,.07) 52%,transparent 72%);box-shadow:0 0 0 28px rgba(160,190,115,.035),0 0 0 60px rgba(160,190,115,.025)}
 .stage-butterfield a::before{border-color:rgba(103,207,194,.35);background:radial-gradient(circle,rgba(50,161,151,.2),rgba(49,122,111,.08) 52%,transparent 72%);box-shadow:0 0 0 28px rgba(76,175,166,.035),0 0 0 60px rgba(76,175,166,.025)}
 .pack-stage a::after{content:"";position:absolute;z-index:-1;left:15%;right:15%;bottom:9%;height:1px;background:linear-gradient(90deg,transparent,rgba(201,220,164,.35),transparent)}
+/* Keep the products and their accents free of any rectangular frame. */
+.pack-stage{border:0;background:transparent;overflow:visible}
+.pack-stage figcaption{border:0;background:transparent;padding:8px 0;color:#a9b59d}
+.pack-stage a{padding:clamp(12px,2vw,28px)}
